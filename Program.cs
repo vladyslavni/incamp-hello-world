@@ -6,7 +6,14 @@ namespace hello_console
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            String name = SayHello("world");
+
+            Console.WriteLine(name);
+        }
+
+        static string SayHello(string name)
+        {
+            return "Hello " + name + "!";
         }
     }
 }
